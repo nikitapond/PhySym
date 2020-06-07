@@ -8,3 +8,10 @@ public class NumericalException : System.Exception
 
     }
 }
+public class ArgumentException : System.Exception
+{
+    public ArgumentException(string log) : base(log)
+    {
+
+    }
+}

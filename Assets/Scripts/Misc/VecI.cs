@@ -86,7 +86,7 @@ public struct Vec3i
 
     public static bool operator ==(Vec3i a, Vec3i b)
     {
-        return a.x == b.x && a.y == b.y && a.z==b.z;
+        return a.x == b.x && a.y == b.y && a.z == b.z;
     }
     public static bool operator !=(Vec3i a, Vec3i b)
     {
@@ -94,27 +94,27 @@ public struct Vec3i
     }
     public static Vec3i operator +(Vec3i a, Vec3i b)
     {
-        return new Vec3i(a.x + b.x, a.y + b.y, a.z+b.z);
+        return new Vec3i(a.x + b.x, a.y + b.y, a.z + b.z);
     }
     public static Vec3i operator -(Vec3i a, Vec3i b)
     {
-        return new Vec3i(a.x - b.x, a.y - b.y, a.z-b.z);
+        return new Vec3i(a.x - b.x, a.y - b.y, a.z - b.z);
     }
     public static Vec3i operator *(Vec3i a, Vec3i b)
     {
-        return new Vec3i(a.x * b.x, a.y * b.y, a.z*b.z);
+        return new Vec3i(a.x * b.x, a.y * b.y, a.z * b.z);
     }
     public static Vec3i operator *(Vec3i a, int b)
     {
-        return new Vec3i(a.x * b, a.y * b, a.z*b);
+        return new Vec3i(a.x * b, a.y * b, a.z * b);
     }
     public static Vec3i operator /(Vec3i a, Vec3i b)
     {
-        return new Vec3i(a.x / b.x, a.y / b.y);
+        return new Vec3i(a.x / b.x, a.y / b.y, a.z / b.z);
     }
     public static Vec3i operator /(Vec3i a, int b)
     {
-        return new Vec3i(a.x / b, a.y / b);
+        return new Vec3i(a.x / b, a.y / b, a.z / b);
     }
 
 }
